@@ -1,9 +1,12 @@
 import logging
+import os
+TOKEN = os.getenv("BOT_TOKEN")
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ==================== НАСТРОЙКИ ====================
-TOKEN = '8748737366:AAFcEuY3Ex55Y_mh5VN8Kqm_-tWjQ6QjEyQ'  # Вставьте токен от @BotFather
+# Вставьте токен от @BotFather
 BOT_USERNAME = '@eto_obman_bot'
 
 # Включаем логирование
